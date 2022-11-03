@@ -1,0 +1,12 @@
+body > .holster {
+    scroll-behaviour: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+main > section {
+    scroll-snap-align: center;
+}
+
+footer {
+    scroll-snap-align: end;
+}
