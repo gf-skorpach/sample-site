@@ -1,0 +1,28 @@
+nav.nav--primary {
+    /* margin-inline: 1rem; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: end;
+}
+
+nav.nav--primary > * {
+    color: var(--c-white);
+    text-transform: uppercase;
+    transition: color 0.25s;
+}
+
+nav.nav--primary > a:active,
+nav.nav--primary > a.active {
+    color: var(--c-green);
+}
+
+nav.nav--primary > a:active:hover,
+nav.nav--primary > a.active:hover {
+    color: var(--c-green-darker);
+}
+
+nav.nav--primary > a:hover {
+    color: var(--c-aqua-lighter);
+    user-select: none;
+}
