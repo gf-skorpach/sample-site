@@ -6,6 +6,7 @@
     <link href="/css/layout.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" />
     <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/event-list.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -52,84 +53,131 @@
 	  </div>
 	</section>
 	<section id="section-services" class="section--feature fullpage dark">
-	  <h1>Services</h1>
-	  <div class="service-list">
-	    <article>
-	      <h3>Par 3</h3>
-	      <p>Some description be here! :)</p>
-	      <button class="button button-primary">Book Now</button>
-	    </article>
-	    <article>
-	      <h3>Smart Range</h3>
-	      <p>Your game doth sucketh.</p>
-	      <button class="button button-primary">Get good, son</button>
-	    </article>
+	  <div class="section-header">
+	    <h1>Services</h1>
 	  </div>
+	  <div class="section-content">
+	    <div class="service-list">
+	      <article>
+		<h3>Par 3</h3>
+		<p>Some description be here! :)</p>
+		<button class="button button-primary">Book Now</button>
+	      </article>
+	      <article>
+		<h3>Smart Range</h3>
+		<p>Your game doth sucketh.</p>
+		<button class="button button-primary">Get good, son</button>
+	      </article>
+	    </div>
+	  </div> 
 	</section>
-	<section class="columns fullpage">
+	<div class="columns fullpage">
 	  <section id="section-hours" class="section--feature">
-	    <h1>Hours</h1>
-	    <p>
-	      Golfuture is always open! Always. Seriously. Our staff can't even leave. Send help.
-	    </p>
+	    <div class="section-header">
+	      <h1 class="align-start">Hours</h1>
+	    </div>
+	    <div class="section-content">
+	      <div>
+		<table cellpadding="10" rules="all">
+		  <thead>
+		    <tr>
+		      <th></th>
+		      <th>Mon-Thu</th>
+		      <th>Fri-Sat</th>
+		      <th>Sun</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">Range</th>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">Par 3</th>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		    </tr>		   
+		    <tr>
+		      <th scope="row">Simulators</th>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		      <td>8am-10pm</td>
+		    </tr>		    
+		  </tbody>
+		</table>
+	      </div>
+	      <p>
+		Golfuture is always open! Always. Seriously. Our staff can't even leave. Send help.
+	      </p>
+	    </div>
 	  </section>
 	  <section id="section-events" class="section--feature">
-	    <h1>Upcoming Events</h1>
-	    <ul class="event-list">
-	      <li>
-		<div class="event-list--header">
-		  <div>
-		    <h3>Monday</h3>
+	    <div class="section-header">
+	      <h1>Upcoming Events</h1>
+	    </div>
+	    <div class="section-content">
+	      <ul class="event-list">
+		<li>
+		  <div class="event-list--header">
+		    <div>
+		      <h3>Monday</h3>
+		    </div>
+		    <div class="event-list--date">
+		      November 07
+		    </div>
 		  </div>
-		  <div class="event-list--date">
-		    November 07
+		  <div class="event-list--content">
+		    <p>
+		      John? JOHN? I'm hungry, John!!! Make me fooooooood.
+		    </p>
 		  </div>
-		</div>
-		<div class="event-list--content">
-		  <p>
-		    John? JOHN? I'm hungry, John!!! Make me fooooooood.
-		  </p>
-		</div>
-		<div class="event-list--footer">
-		  <a>Eat Lasagna</a>
-		</div>
-	      </li>
-	      <li>
-		<div class="event-list--header">
-		  <h3>Christmas in November</h3>
-		  <div class="event-list--date">
-		    November 25
+		  <div class="event-list--footer">
+		    <a>Eat Lasagna</a>
 		  </div>
-		</div>
-		<div class="event-list--content">
-		  <p>
-		    The first day where it is socially acceptable to watch Hallmark Christmas movies.
-		  </p>
-		</div>
-		<div class="event-list--footer">
-		  <a>Deck the Halls</a>
-		</div>
-	      </li>
-	      <li>
-		<div class="event-list--header">
-		  <h3>December Fools</h3>
-		  <div class="event-list--date">
-		    December 1st
+		</li>
+		<li>
+		  <div class="event-list--header">
+		    <h3>Christmas in November</h3>
+		    <div class="event-list--date">
+		      November 25
+		    </div>
 		  </div>
-		</div>
-		<div class="event-list--content">
-		  <p>
-		    Join us for the elvish festival of seasonal shennanigans,
-		    celebrated by holliday harlequins the world over!
-		  </p>
-		</div>
-		<div class="event-list--footer">
-		  <a>Gift-Wrap your Coworker's Computer</a>
-		</div>
-	      </li>
-	    </ul>
+		  <div class="event-list--content">
+		    <p>
+		      The first day where it is socially acceptable to watch Hallmark Christmas movies.
+		    </p>
+		  </div>
+		  <div class="event-list--footer">
+		    <a>Deck the Halls</a>
+		  </div>
+		</li>
+		<li>
+		  <div class="event-list--header">
+		    <h3>December Fools</h3>
+		    <div class="event-list--date">
+		      December 1st
+		    </div>
+		  </div>
+		  <div class="event-list--content">
+		    <p>
+		      Join us for the elvish festival of seasonal shennanigans,
+		      celebrated by holliday harlequins the world over!
+		    </p>
+		  </div>
+		  <div class="event-list--footer">
+		    <a>Gift-Wrap your Coworker's Computer</a>
+		  </div>
+		</li>
+	      </ul>
+	      <a>
+		See More...
+	      </a>
+	    </div>
 	  </section>
-	</section>
+	</div>
       </main>
       <footer>
 	<p>

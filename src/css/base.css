@@ -73,3 +73,11 @@ section.dark h4 {
 section.dark p {
     color: var(--theme-text-dark);
 }
+
+a {
+    color: var(--c-aqua-darker);
+}
+
+a:hover {
+    color: var(--c-aqua);
+}

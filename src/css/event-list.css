@@ -1,0 +1,55 @@
+/* Event-List component */
+ul.event-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+
+ul.event-list > li {
+    display: grid;
+    grid-template-rows: 24px 1fr 16px;
+    padding: 1rem;
+    background-color: var(--theme-superlight);
+    border: solid 1px var(--iron);
+    border-radius: 1rem;
+    box-shadow: 0px 2px 3px var(--theme-shadow);
+}
+
+ul.event-list > li > .event-list--header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-align-items: center;
+}
+
+ul.event-list > li .event-list--date {
+    color: var(--c-deepspace);
+}
+
+ul.event-list > li h3 {
+    margin: 0;
+}
+
+ul.event-list > li a {
+    color: var(--theme-link-light);
+    text-transform: uppercase;
+    user-select: none;
+}
+
+ul.event-list > li a:hover {
+    filter: brightness(120%);
+}
+
+ul.event-list > li a:active {
+    color: var(--c-green-darker);
+}
+
+ul.event-list > li a::after {
+    content: url('/assets/arrow_right.svg');
+    display: inline-block;
+    margin-left: 5px;
+    height: 1ch;
+    width: 1ch;
+}

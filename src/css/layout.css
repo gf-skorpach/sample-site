@@ -52,6 +52,7 @@ body > .holster {
 
 main {
     /* padding-top: var(--header-height); */
+    position: relative;
 }
 
 main > section {
@@ -59,8 +60,8 @@ main > section {
     padding: 1rem;
 }
 
-main > section.fullpage {
-    height: calc(100vh - var(--header-height));
+main > .fullpage {
+    min-height: calc(100vh - var(--header-height));
 }
 
 footer {
