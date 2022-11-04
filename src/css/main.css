@@ -5,8 +5,116 @@ body > .holster {
 
 main > section {
     scroll-snap-align: center;
+    box-shadow: 0px 2px 3px var(--theme-shadow);
 }
 
 footer {
     scroll-snap-align: end;
 }
+
+main > section.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main > section.columns > section {
+    padding-inline: 1rem;
+}
+
+
+
+/* Event-List component */
+ul.event-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+
+ul.event-list > li {
+    display: grid;
+    grid-template-rows: 24px 1fr 16px;
+    padding: 1rem;
+    background-color: var(--theme-superlight);
+    border: solid 1px var(--iron);
+    border-radius: 1rem;
+    box-shadow: 0px 2px 3px var(--theme-shadow);
+}
+
+ul.event-list > li > .event-list--header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-align-items: center;
+}
+
+ul.event-list > li .event-list--date {
+    color: var(--c-deepspace);
+}
+
+ul.event-list > li h3 {
+    margin: 0;
+}
+
+ul.event-list > li a {
+    color: var(--theme-link-light);
+    text-transform: uppercase;
+    user-select: none;
+}
+
+ul.event-list > li a:hover {
+    filter: brightness(120%);
+}
+
+ul.event-list > li a:active {
+    color: var(--c-green-darker);
+}
+
+ul.event-list > li a::after {
+    content: url('/assets/arrow_right.svg');
+    display: inline-block;
+    margin-left: 5px;
+    height: 1ch;
+    width: 1ch;
+}
+
+/* Button Component */
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 50em;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.25s,
+		color 0.1s,
+		box-shadow 0.1s;
+    box-shadow: 1px 2px 3px var(--theme-shadow);
+}
+
+.button:active {
+    box-shadow: inset 1px 2px 3px var(--theme-shadow);
+}
+
+.button.button-primary {
+    background: var(--c-green);
+    color: var(--c-deepspace);
+}
+
+.button.button-primary:hover {
+    background: var(--c-green-darker);
+    color: var(--c-white);
+}
+
+.button.button-secondary {
+    background: var(--c-white);
+    color: var(--theme-header-light);
+}
+
+.button.button-secondary:hover {
+    background: var(--theme-superlight);
+    color: var(--theme-text-light-secondary);
+}
+
+

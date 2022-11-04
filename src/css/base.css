@@ -13,10 +13,14 @@
 /* Semantic colors */
 :root {
     --theme-shadow: #2228;
+    --theme-superlight: #f8faff;
     --theme-text-light: var(--c-iron);
-    --theme-text-dark: var(--c-aqua-lighter);
+    --theme-text-light-secondary: var(--c-aqua-darker);
+    --theme-text-dark: var(--c-slate);
+    --theme-text-dark-secondary: var(--c-aqua-lighter);
     --theme-header-light: var(--c-deepspace);
     --theme-header-dark: var(--c-white);
+    --theme-link-light: var(--c-aqua-darker);
 }
 
 body {
@@ -32,7 +36,7 @@ header {
 
 footer {
     background-color: var(--c-iron);
-    color: var(--theme-text-dark);
+    color: var(--theme-text-dark-secondary);
 }
 
 h1,
@@ -55,6 +59,17 @@ section.dark {
     background-color: var(--c-deepspace);
 }
 
-section.dark h1 {
+section.offwhite {
+    background-color: var(--theme-superlight);
+}
+
+section.dark h1,
+section.dark h2,
+section.dark h3,
+section.dark h4 {
     color: var(--theme-header-dark);
+}
+
+section.dark p {
+    color: var(--theme-text-dark);
 }
